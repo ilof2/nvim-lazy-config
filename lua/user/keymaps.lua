@@ -40,3 +40,4 @@ map("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files(require('
 --[[ keymap("n", "<leader>f", "<cmd>lua require('telescope.builtin').find_files({search_dirs = {'%:p'}})<cr>", opts) ]]
 map("n", "<leader>fl", "<cmd>Telescope live_grep<cr>", opts)
 map("n", "<leader>pv", ":lua require('swenv.api').pick_venv()<cr>", opts)
+map("n", "<leader>,", ":nohlsearch<CR>", opts)
