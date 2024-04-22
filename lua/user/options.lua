@@ -27,7 +27,9 @@ local options = {
   expandtab = true,                        -- convert tabs to spaces
   shiftwidth = 4,                          -- the number of spaces inserted for each indentation
   tabstop = 4,                             -- insert 2 spaces for a tab
-  cursorline = false,                       -- highlight the current line
+  guicursor = "",
+  autoindent = true,
+  cursorline = true,                       -- highlight the current line
   number = true,                           -- set numbered lines
   relativenumber = true,                  -- set relative numbered lines
   numberwidth = 4,                         -- set number column width to 2 {default 4}
@@ -38,6 +40,7 @@ local options = {
   scrolloff = 8,                           -- minimal number of screen lines to keep above and below the cursor
   sidescrolloff = 6,                       -- minimal number of screen columns either side of cursor if wrap is `false`
   whichwrap = "bs<>[]hl",                  -- which "horizontal" keys are allowed to travel to prev/next line
+  backspace = "indent,eol,start",
 }
 
 for k, v in pairs(options) do
