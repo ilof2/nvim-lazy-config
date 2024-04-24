@@ -4,7 +4,11 @@ return {
     'williamboman/mason-lspconfig.nvim',
   },
   config = function ()
-    require('mason').setup({})
+    require('mason').setup({
+        ensure_installed = {
+            "debugpy"
+        }
+    })
     require('lsp-zero').extend_lspconfig()
     require('mason-lspconfig').setup({
       ensure_installed = {

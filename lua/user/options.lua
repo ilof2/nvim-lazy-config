@@ -37,10 +37,11 @@ local options = {
   signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
   wrap = false,                             -- display lines as one long line
   linebreak = true,                        -- companion to wrap, don't split words
-  scrolloff = 8,                           -- minimal number of screen lines to keep above and below the cursor
-  sidescrolloff = 6,                       -- minimal number of screen columns either side of cursor if wrap is `false`
+  scrolloff = 10,                           -- minimal number of screen lines to keep above and below the cursor
+  sidescrolloff = 8,                       -- minimal number of screen columns either side of cursor if wrap is `false`
   whichwrap = "bs<>[]hl",                  -- which "horizontal" keys are allowed to travel to prev/next line
   backspace = "indent,eol,start",
+  laststatus = 3
 }
 
 for k, v in pairs(options) do

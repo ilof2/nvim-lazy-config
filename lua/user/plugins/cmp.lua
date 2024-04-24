@@ -136,8 +136,3 @@ return {
         }
     end
 }
-
-
-
---   פּ ﯟ   some other good icons
--- find more here: https://www.nerdfonts.com/cheat-sheet

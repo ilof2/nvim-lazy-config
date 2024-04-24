@@ -19,8 +19,5 @@ return {
   -- Python
   { "nvim-neotest/nvim-nio" },
   'integralist/vim-mypy',
-  'mfussenegger/nvim-dap',
-  { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} },
-  "ravenxrz/DAPInstall.nvim",
   'AckslD/swenv.nvim',
 }

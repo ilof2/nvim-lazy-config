@@ -4,7 +4,7 @@ return {
     require('neoscroll').setup({
         cursor_scrolls_alone = false,
         performance_mode = false,
-        respect_scrolloff = true,
+        respect_scrolloff = false,
     })
   end
 }
