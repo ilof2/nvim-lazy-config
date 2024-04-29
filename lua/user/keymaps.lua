@@ -16,6 +16,11 @@ map("n", "<C-j>", "<C-w>j", opts)
 map("n", "<C-k>", "<C-w>k", opts)
 map("n", "<C-l>", "<C-w>l", opts)
 
+map("n", "<leader>sv", "<C-w>v", opts)
+map("n", "<leader>sh", "<C-w>s", opts)
+map("n", "<leader>se", "<C-w>=", opts)
+map("n", "<leader>x", "<cmd>close<cr>", opts)
+
 map("n", "<leader>qq", ":qall!<CR>", opts)
 
 -- Resize with arrows
@@ -31,6 +36,9 @@ map("v", "<S-k>", ":m '<-2<CR>gv=gv", opts)
 -- Navigate buffers
 map("n", "<S-h>", ":bnext<CR>", opts)
 map("n", "<S-l>", ":bprevious<CR>", opts)
+
+map("n", "<leader>fk", ":cprev<cr>", opts)
+map("n", "<leader>fj", ":cnext<cr>", opts)
 
 -- Save shorcuts
 map("n", "<leader>w", ":w!<CR>", opts)
