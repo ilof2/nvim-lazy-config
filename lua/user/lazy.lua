@@ -12,11 +12,6 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-local opts = {
-    defaults = {
-        lazy = true
-    }
-}
 
 require("lazy").setup({
     {import = "user.plugins"},

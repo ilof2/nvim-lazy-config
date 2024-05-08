@@ -49,6 +49,10 @@ map("n", "<leader><tab>", ":NvimTreeToggle<cr>", opts)
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 map("n", "<leader>fl", "<cmd>Telescope live_grep<cr>", opts)
 map("n", "<leader>fs", "<cmd>Telescope grep_string<cr>", opts)
+-- quick search something --
+map("v", "<leader>f", "y<ESC>:Telescope live_grep default_text=<c-r>0<CR>", opts)
+
 
 map("n", "<leader>pv", ":lua require('swenv.api').pick_venv()<cr>", opts)
+map("n", "<leader>lo", ":Lspsaga outline<cr>", opts)
 map("n", "<leader>,", ":nohlsearch<CR>", opts)

@@ -27,7 +27,11 @@ config = function ()
       lualine_a = {'mode', 'swenv'},
       lualine_b = {'branch', 'diff', 'diagnostics'},
       lualine_c = {'filename'},
-      lualine_x = {'encoding', 'filetype'},
+      lualine_x = {'encoding', 'filetype', {
+        require("noice").api.statusline.mode.get,
+        cond = require("noice").api.statusline.mode.has,
+        color = { fg = "#ff9e64" },
+      }},
       lualine_y = {'progress'},
       lualine_z = {'location'}
     },
